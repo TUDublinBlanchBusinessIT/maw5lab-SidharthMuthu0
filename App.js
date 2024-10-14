@@ -1,6 +1,7 @@
 import { StyleSheet, View, Image, Dimensions } from 'react-native';
 import Swiper from 'react-native-swiper';
 import PersonalInfo from './components/PersonalInfo';
+import MovieBooking from './components/MovieBooking';
 
 
 export default function App() {
@@ -10,6 +11,8 @@ export default function App() {
       <View style={styles.imgview}><Image source={require('./assets/moviesV3.png')}/></View>
       <Swiper showsButtons={true}>
           <PersonalInfo screenstyle={styles.screen}/>
+          <MovieBooking screenstyle={styles.screen}/>
+
       </Swiper>
     </View>
   )
@@ -35,3 +38,5 @@ const styles = StyleSheet.create({
   }
 
 });
+
+
