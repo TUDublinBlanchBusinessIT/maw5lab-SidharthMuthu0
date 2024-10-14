@@ -13,7 +13,8 @@ export default function MovieBooking({screenstyle}) {
   const [movieList, setMovieList] = useState([
    {'id': 1, "title": "Kneecap", "age": 16},
    {'id' : 2, "title": "Joker, Folie a Deux", "age": 18}, 
-   {'id': 3, "title": "Deadpool and Wolverine", "age": 12}
+   {'id': 3, "title": "Deadpool and Wolverine", "age": 12},
+   {'id': 4, "title": "Jack is class", "age": 19},
   ]);
   return (
     <View style={screenstyle}>    

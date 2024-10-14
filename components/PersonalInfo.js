@@ -1,4 +1,4 @@
-import { Text, SafeAreaView, TextInput, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
+import { Text, SafeAreaView, TextInput, StyleSheet, View, Button, TouchableOpacity,Switch } from 'react-native';
 import DatePicker from '../components/DatePicker.js';
 import {useState} from 'react';
 
@@ -6,6 +6,7 @@ import {useState} from 'react';
 export default function PersonalInfo({screenstyle}) {
 
   const [dob, setDob] = useState(new Date("2000-01-01"));
+  const [balcony,setBalcony] =useState(false);
  
   const [showDTP,setShowDTP] = useState(false);
   function showDatePicker(){
@@ -22,6 +23,7 @@ export default function PersonalInfo({screenstyle}) {
       <Text style={styles.label}>Lastname</Text>
       <TextInput style={styles.textbox} placeholder="Enter your last name"/>  
       <DatePicker thisDate={dob} setThisdate={setDob} datelabel="Date of Birth" />
+      <Switch value={balcony} onChargeValue = {setBalcony}/>
     </View>
   );
 }
