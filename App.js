@@ -8,7 +8,7 @@ export default function App() {
   
   return (
     <View style={styles.screencontainer}>
-      <View style={styles.imgview}><Image source={require('./assets/moviesV3.png')}/></View>
+      <View style={styles.imgview}><Image source={require('./assets/4f829e85866bd52d062ca58b4e1ecef5.png')}/></View>
       <Swiper showsButtons={true}>
           <PersonalInfo screenstyle={styles.screen}/>
           <MovieBooking screenstyle={styles.screen}/>
@@ -38,5 +38,3 @@ const styles = StyleSheet.create({
   }
 
 });
-
-
